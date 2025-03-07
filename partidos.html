@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Partidos - UEFA Champions League</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon"    href="imagenes/logo.png" type="image/png">
+</head>
+<body>
+    <header>
+        <a href="https://www.uefa.com/" target="_blank" class="uefa-link" >UEFA.com</a>
+        <h1>Partidos</h1>
+
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="partidos.html">Partidos</a></li> <!-- Enlace a la página de partidos -->
+            <li><a href="clasificacion.html">Clasificación</a></li>
+            <li><a href="videos.html">Videos</a></li>
+            <li><a href="equipos.html">Equipos</a></li>
+            <li><a href="sesion.html">Iniciar sesión</a></li>
+        </ul>   
+    </nav>
+
+    <main>
+        <h2>Partidos de la <span class="texto-cursiva texto-color-rojo">UEFA Champions League</span></h2>
+        <p>No te pierdas los próximos partidos de la fase de grupos.</p>
+        <!-- Día 1 -->
+        <div class="dia">
+
+            <h2 onclick="mostrarPartidos('partidos-4-marzo')">Martes 4 de Marzo de 2025</h2>
+            <div id="partidos-4-marzo" class="partidos">
+                <!-- p 1 -->
+                <div class="partido">
+                    <img src="imagenes/brujas.png" alt="Club Brugge">
+                    <span>Club Brugge</span>
+                    <span>vs</span>
+                    <img src="imagenes/aston.png" alt="Aston Villa">
+                    <span>Aston Villa</span>
+                    <span>11:45</span>
+                    <button onclick="verDetalles('detalles-1')">Ver detalles</button>
+                    <div id="detalles-1" class="detalles">
+                        <p>Estadio: Jan Breydel Stadium</p>
+                        <p>Árbitro: John Smith</p>
+                    </div>
+                </div>
+<!-- p 2 -->
+                <div class="partido">
+                    <img src="imagenes/real.png" alt="Real Madrid">
+                    <span>Real Madrid</span>
+                    <span>vs</span>
+                    <img src="imagenes/atleti.png" alt="Atlético Madrid">
+                    <span>Atlético Madrid</span>
+                    <span>14:00</span>
+                    <button onclick="verDetalles('detalles-2')">Ver detalles</button>
+                    <div id="detalles-2" class="detalles">
+                        <p>Estadio: Santiago Bernabéu</p>
+                        <p>Árbitro: Jane Doe</p>
+                    </div>
+                </div>
+                <!-- p 3 -->
+
+                <div class="partido">
+                    <img src="imagenes/psv.png" alt="PSV">
+                    <span>PSV</span>
+                    <span>vs</span>
+                    <img src="imagenes/arsenal.png" alt="Arsenal">
+                    <span>Arsenal</span>
+                    <span>14:00</span>
+                    <button onclick="verDetalles('detalles-3')">Ver detalles</button>
+                    <div id="detalles-3" class="detalles">
+                        <p>Estadio: PSV station</p>
+                        <p>Árbitro: Jesus Gil</p>
+                    </div>
+                </div>
+<!-- p 4 -->
+
+                <div class="partido">
+                    <img src="imagenes/Lille.png" alt="Lille">
+                    <span>Lille</span>
+                    <span>vs</span>
+                    <img src="imagenes/bdormunt.png" alt="B.Dortmund">
+                    <span>B.Dormunt</span>
+                    <span>14:00</span>
+                    <button onclick="verDetalles('detalles-4')">Ver detalles</button>
+                    <div id="detalles-4" class="detalles">
+                        <p>Estadio: BVB Stadion Dortmund</p>
+                        <p>Árbitro: José María Sánchez</p>
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+        </div>
+
+        <!-- Día 2 -->
+        <div class="dia">
+            <h2 onclick="mostrarPartidos('partidos-5-marzo')">Miércoles 5 de Marzo de 2025</h2>
+
+            <div id="partidos-5-marzo" class="partidos">
+                <!-- p 1 -->
+                <div class="partido">
+                    <img src="imagenes/Feyenoord.png" alt="Feyenoord">
+                    <span>Feyenoord</span>
+                    <span>vs</span>
+                    <img src="imagenes/inter.png" alt="Inter">
+                    <span>Inter</span>
+                    <span>11:45</span>
+                    <button onclick="verDetalles('detalles-5')">Ver detalles</button>
+                    <div id="detalles-5" class="detalles">
+                        <p>Estadio: Stadion Feijenoord 'De Kuip'</p>
+                        <p>Árbitro: Espen Eskås</p>
+                    </div>
+                </div>
+<!-- p 2 -->
+                <div class="partido">
+                    <img src="imagenes/paris.png" alt="Paris">
+                    <span>Paris</span>
+                    <span>vs</span>
+                    <img src="imagenes/Liverpool.png" alt="Liverpool">
+                    <span>Liverpool</span>
+                    <span>14:00</span>
+                    <button onclick="verDetalles('detalles-6')">Ver detalles</button>
+                    <div id="detalles-6" class="detalles">
+                        <p>Estadio: Parc des Princes
+</p>
+                        <p>Árbitro: Davide Massa ITA
+                        </p>
+                    </div>
+                </div>
+                <!-- p 3 -->
+
+                <div class="partido">
+                    <img src="imagenes/bayer.png" alt="Bayern München">
+                    <span>Bayern München                    </span>
+                    <span>vs</span>
+                    <img src="imagenes/leverkusen.png" alt="Leverkusen">
+                    <span>Leverkusen</span>
+                    <span>14:00</span>
+                    <button onclick="verDetalles('detalles-7')">Ver detalles</button>
+                    <div id="detalles-7" class="detalles">
+                        <p>Estadio: Fußball Arena München                        </p>
+                        <p>Árbitro: Michael Oliver ENG                        </p>
+                    </div>
+                </div>
+<!-- p 4 -->
+
+                <div class="partido">
+                    <img src="imagenes/fcb.png" alt="Barcelona">
+                    <span>Barcelona</span>
+                    <span>vs</span>
+                    <img src="imagenes/benfica.png" alt="Benfica                    ">
+                    <span>Benfica                    </span>
+                    <span>14:00</span>
+                    <button onclick="verDetalles('detalles-8')">Ver detalles</button>
+                    <div id="detalles-8" class="detalles">
+                        <p>Estadio: Estádio do SL Benfica                        </p>
+                        <p>Árbitro: Felix Zwayer GER                        </p>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+        </div>
+    </main>
+
+    <!-- Enlazar el archivo JavaScript externo -->
+    <script src="js/script.js"></script>
+</body>
+</html>

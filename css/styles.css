@@ -1,0 +1,263 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header, nav {
+    background-color: #004d98;
+    color: white;
+    padding: 10px;
+}
+
+header {
+    text-align: center;
+    position: relative;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.uefa-link {
+    color: white;
+    text-decoration: none;
+}
+
+.uefa-link:hover {
+    color: #ccc;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+main {
+    padding: 20px;
+}
+
+/* Estilos para la tabla */
+.equipos-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.equipos-table th, .equipos-table td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.equipos-table th {
+    background-color: #004d98;
+    color: white;
+    font-size: 1.2em;
+}
+
+.equipos-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Estilos para los escudos */
+.escudo {
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+}
+
+/* Estilos para los días */
+.dia {
+    margin-bottom: 20px;
+}
+
+.dia h2 {
+    cursor: pointer;
+    background-color: #004d98;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Estilos para los partidos */
+.partidos {
+    display: none;
+    margin-top: 10px;
+}
+
+.partido {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.partido img {
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+}
+
+.partido span {
+    margin: 0 10px;
+}
+
+.partido button {
+    margin-left: auto;
+    padding: 5px 10px;
+    background-color: #004d98;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.partido button:hover {
+    background-color: #003366;
+}
+
+/* Estilos para los detalles */
+.detalles {
+    display: none;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+/* Estilos para el contenedor */
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+/* Estilos para el mapa */
+#map {
+    height: 500px;
+    width: 80%;
+    margin: 20px auto;
+    border: 2px solid #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para el formulario */
+form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    font-weight: bold;
+    color: #004d98;
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="number"],
+form select {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form input[type="submit"] {
+    background-color: #004d98;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+form input[type="submit"]:hover {
+    background-color: #003366;
+}
+
+/* Estilos para la información del usuario */
+#informacion-usuario {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+#informacion-usuario img {
+    width: 30px;
+    height: 30px;
+}
+
+#informacion-usuario span {
+    font-size: 14px;
+    color: white;
+}
+
+/* Estilos para el equipo favorito */
+#equipo-favorito {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.escudo-equipo {
+    width: 40px;
+    height: 40px;
+}
+/* Estilos para formatos de texto */
+.texto-negrita {
+    font-weight: bold; /* Texto en negrita */
+}
+
+.texto-cursiva {
+    font-style: italic; /* Texto en cursiva */
+}
+
+.texto-color-rojo {
+    color: red; /* Texto en color rojo */
+}
+
+.texto-color-azul {
+    color: #004d98; /* Texto en color azul (coherente con el tema) */
+}
+
+.texto-subrayado {
+    text-decoration: underline; /* Texto subrayado */
+}

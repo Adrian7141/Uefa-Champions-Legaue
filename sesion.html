@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión - UEFA Champions League</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="imagenes/logo.png" type="image/png">
+</head>
+<body>
+    <header>
+        <a href="https://www.uefa.com/" target="_blank" class="uefa-link">UEFA.com</a>
+        <h1>Iniciar Sesión</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="partidos.html">Partidos</a></li>
+            <li><a href="clasificacion.html">Clasificación</a></li>
+            <li><a href="videos.html">Videos</a></li>
+            <li><a href="equipos.html">Equipos</a></li>
+            <li><a href="sesion.html">Iniciar sesión</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Formulario de Inicio de Sesión</h2>
+        <form action="mi-informacion.html" method="get" onsubmit="return guardarDatosUsuario()">
+            <!-- Campos del formulario -->
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required><br><br>
+        
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required><br><br>
+        
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="edad" min="1" max="120" required><br><br>
+        
+            <label for="pais">País:</label>
+            <input type="text" id="pais" name="pais" required><br><br>
+        
+            <label for="equipo">Equipo favorito:</label>
+            <select id="equipo" name="equipo" required>
+                <option value="">Selecciona tu equipo</option>
+                <option value="Arsenal">Arsenal</option>
+                <option value="Aston Villa">Aston Villa</option>
+                <option value="Atlético Madrid">Atlético Madrid</option>
+                <option value="Borussia Dortmund">Borussia Dortmund</option>
+                <option value="Barcelona">Barcelona</option>
+                <option value="Bayern Múnich">Bayern Múnich</option>
+                <option value="Benfica">Benfica</option>
+                <option value="Club Brugge">Club Brugge</option>
+                <option value="Feyenoord">Feyenoord</option>
+                <option value="Inter de Milán">Inter de Milán</option>
+                <option value="Bayer Leverkusen">Bayer Leverkusen</option>
+                <option value="Lille">Lille</option>
+                <option value="Liverpool">Liverpool</option>
+                <option value="Paris Saint-Germain">Paris Saint-Germain</option>
+                <option value="PSV Eindhoven">PSV Eindhoven</option>
+                <option value="Real Madrid">Real Madrid</option>
+            </select><br><br>
+        
+            <input type="submit" value="Enviar">
+        </form>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
